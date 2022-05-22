@@ -1,0 +1,27 @@
+.quiz {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Poppins", sans-serif;
+  margin: 4rem;
+  margin-top: 2rem;
+}
+.quizInfo {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  text-transform: uppercase;
+  margin: 10px;
+}
+.quizInfo-left {
+  display: flex;
+  flex-direction: column;
+}
+
+@media screen and (max-width: 600px) {
+  .quiz {
+    margin: 1.5rem;
+    margin-top: 1rem;
+  }
+}
