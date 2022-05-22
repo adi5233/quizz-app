@@ -38,12 +38,6 @@ h1 {
   border-radius: 9px;
 }
 
-@media (max-width: 614px) {
-  .singleOption {
-    width: 100%;
-  }
-}
-
 .controls {
   display: flex;
   width: 100%;
@@ -60,4 +54,13 @@ h1 {
   background-color: rgb(233, 0, 0);
   color: white;
   box-shadow: 0 0 1px black;
+}
+
+@media screen and (max-width: 600px) {
+  h1 {
+    font-size: 1.2rem;
+  }
+  .singleOption {
+    width: 100%;
+  }
 }
