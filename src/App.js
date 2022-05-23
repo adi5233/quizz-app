@@ -3,7 +3,7 @@ import "./App.css";
 import { useState } from "react";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import Footer from "./components/Footer/Footer";
+// import Footer from "./components/Footer/Footer";
 import Home from "./components/Home/Home";
 import Quiz from "./components/Quiz/Quiz";
 import Result from "./components/Result/Result";
@@ -43,7 +43,7 @@ function App() {
         />
         <Route path="*" element={<NotFound />} />
       </Routes>
-      <Footer />
+      {/* <Footer /> */}
     </BrowserRouter>
   );
 }
