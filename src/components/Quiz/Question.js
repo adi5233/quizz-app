@@ -3,6 +3,7 @@ import { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./Question.css";
 import ErrorMessage from "../utils/ErrorMessage";
+import getTextWithDecodedHTMLEntities from "../utils/getTextWithDecodedHTMLEntities";
 
 const Question = ({
   currQues,
@@ -52,7 +53,7 @@ const Question = ({
       </h1>
 
       <div className="singleQuestion">
-        <h2>{questions[currQues].question}</h2>
+        <h2> {getTextWithDecodedHTMLEntities(questions[currQues].question)} </h2>
         <div className="options">
           {error && <ErrorMessage>{error}</ErrorMessage>}
           {options &&
