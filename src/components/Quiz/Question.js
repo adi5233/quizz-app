@@ -94,6 +94,7 @@ const Question = ({
             size="large"
             style={{ width: 185 }}
             onClick={handleNext}
+            disabled={!selected}
           >
             {currQues > 20 ? "Submit" : "Next Question"}
           </Button>
