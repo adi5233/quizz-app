@@ -54,7 +54,7 @@ const Question = ({
 
       <div className="singleQuestion">
         <h2> {getTextWithDecodedHTMLEntities(questions[currQues].question)} </h2>
-        <div className="options">
+        <div className={`options ${!selected && 'hoverOption'}`}>
           {error && <ErrorMessage>{error}</ErrorMessage>}
           {options &&
             options.map((option) => (
